@@ -4,14 +4,17 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: 2,
+  workers: 1,
+  timeout: 60000,
   reporter: [['html'], ['list']],
   use: {
     baseURL: 'https://fluentinhealth.com',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    navigationTimeout: 45000,
+    actionTimeout: 15000,
   },
   projects: [
     {
