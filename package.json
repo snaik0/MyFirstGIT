@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "This is test repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "generate": "node scripts/generate-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snaik0/MyFirstGIT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/snaik0/MyFirstGIT/issues"
+  },
+  "homepage": "https://github.com/snaik0/MyFirstGIT#readme",
+  "dependencies": {
+    "@playwright/test": "^1.60.0",
+    "playwright": "^1.60.0"
+  }
+}
